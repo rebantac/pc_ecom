@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import PdtDetail from './pages/PdtDetail';
 import Footer from './components/Footer';
 import ProductCard from './components/ProductCard';
+import Products from './components/Products';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/' element={<Home />}/>
         <Route path='/productCard' element={<ProductCard/>}/>
         <Route path='/product' element={<PdtDetail />} /> 
+        <Route path='/products' element={<Products/>}/>
       </Routes>
 
       <Footer />
