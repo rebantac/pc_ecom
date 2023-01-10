@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import PdtDetail from './pages/PdtDetail';
 import Footer from './components/Footer';
+import ProductCard from './components/ProductCard';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
 
       <Routes>
         <Route path='/' element={<Home />}/>
-
+        <Route path='/productCard' element={<ProductCard/>}/>
         <Route path='/product' element={<PdtDetail />} /> 
       </Routes>
 
