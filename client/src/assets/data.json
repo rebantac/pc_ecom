@@ -67,5 +67,143 @@
             "Best printer and print copy setting very good option brother printer."
         ],
         "Ratings": 4.2
+    },
+    {
+        "Id": "pd1",
+        "Name": "Acer Predator Helios Laptop",
+        "Description": {
+            "Processor&Memory": "Intel, core_i9, Intel® Core¢ i9-11900H processor, 4.9 GHz, 16GB RAM, RAM Expandable up to 32GB.",
+            "Operating System & Software": "Windows operating system, INVALID DATA Included.",
+            "Storage": " SSD, 1TB",
+            "Display": "15.6 inches, LED display, 1920 x 1080 resolution, 360 Hz refresh rate.",
+            "Ports & Connectivity": "3 USB 3.0 Ports,0 USB 2.0 Ports,1 HDMI Ports,with Bluetooth;Wi-Fi.",
+            "Features": " Dedicated graphics,NVIDIA® GeForce RTX 3060 with 6 GB of dedicated GDDR6 VRAM 6GB graphics RAM,0 hours average battery life. ",
+            "Warranty": "1 Year manufacturer"
+        },
+        "MRP": 161900.00,
+        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71Xk9qt6IwL._SL1500_.jpg",
+        "Review": [
+            "Its an awesome product as it is a gaming laptop",
+            "Good Product"
+        ],
+        "Ratings": 5
+    },
+    {
+        "Id": "pd2",
+        "Name": "Samsung 24inch monitor",
+        "Description": {
+            "Display": "24 inch Samsung Monitor - 1,920 x 1, 080 Resolution IPS Panel Monitor. 3-sided borderless display for All-expansive view. Fluid pictures with 75hz refresh rate | 5 ms response time | 250cd/m2 Brightness (Typical).",
+            "Aspect Ratio": "16: 9 | 178° Horizontal and Vertical Viewing Angle.",
+            "Features": "FreeSync and Game Mode to adjust any game and fill screen. Eye Saver Mode and Flicker free to reduce eye strain. ",
+            "Connectivity": "D-Sub Port, HDMI.",
+            "Warranty": " 3 Years Warranty on Product From Manufacturer"
+        },
+        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81TjRLHaz1L._SL1500_.jpg",
+        "MRP": 10099,
+        "Review": [
+            "I have been using for my personal and office work. It's a good product when you like to splitting the screen and work simultaneously in two different windows. The experience is far great"
+        ],
+        "Ratings": 4.3
+    },
+    {
+        "Id": "pd3",
+        "Name": "Brother DCP-T525W - Wi-Fi Color Ink Tank Multifunction printer",
+        "Description": {
+            "Printer type": "ink Tank;",
+            "functionality": "all in one (print, scan, copy);",
+            "printer output": "color",
+            "Connectivity": "USB, Wi-Fi, Wi-Fi direct",
+            "power source": "220 - 240 V AC 50/60 Hz",
+            "Scanner Resolution": "1,200 X 2, 400dpi",
+            "Airprint Support": "Yes.",
+            "OS Compatibility": "WIN, Mac, Linux; Duplex - Manual;",
+            "Enlarge/reduce option": " Yes;",
+            "Mobile connectivity ": "Yes.",
+            "Max Print Speed": " 28/11 ppm (Black/Color);",
+            "Print Cost": " 0.08(Black)/0.09 (CMY).",
+            "Maximum Paper Thickness": " 220 GSM",
+            "Power wattage": " 16 W. Ideal for home or Office",
+            "Included Components": "Power Cable, USB, Installation CD,1 Black Ink Bottle",
+            "Paper Size Supported": " A4, Letter, Legal, Mexico Legal, India Legal, Folio, Executive, B5 (JIS), A5, B6 (JIS), A6, Envelopes (C5, Com-10, DL, Monarch), Photo (4 x 6)/(10 x 15 cm), Photo 2L (5 x 7)/(13 x 18 cm), Index card (5 x 8)/(13 x 20 cm).",
+            "Genuine Ink bottles ": " BTD60BK, BT5000 C, M, Y",
+            "page yield ": "7500 pages (Black), C, M, Y - 5000 pages each (colour). ",
+            "Ink Color ": "Black, Cyan, Magenta and Yellow.",
+            "Wifi Band support ": " 2.4 GHz"
+        },
+        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61lk9CNDVXL._SX679_.jpg",
+        "MRP": 14999,
+        "Review": [
+            "Best printer and print copy setting very good option brother printer."
+        ],
+        "Ratings": 4.2
+    },
+    {
+        "Id": "pd1",
+        "Name": "Acer Predator Helios Laptop",
+        "Description": {
+            "Processor&Memory": "Intel, core_i9, Intel® Core¢ i9-11900H processor, 4.9 GHz, 16GB RAM, RAM Expandable up to 32GB.",
+            "Operating System & Software": "Windows operating system, INVALID DATA Included.",
+            "Storage": " SSD, 1TB",
+            "Display": "15.6 inches, LED display, 1920 x 1080 resolution, 360 Hz refresh rate.",
+            "Ports & Connectivity": "3 USB 3.0 Ports,0 USB 2.0 Ports,1 HDMI Ports,with Bluetooth;Wi-Fi.",
+            "Features": " Dedicated graphics,NVIDIA® GeForce RTX 3060 with 6 GB of dedicated GDDR6 VRAM 6GB graphics RAM,0 hours average battery life. ",
+            "Warranty": "1 Year manufacturer"
+        },
+        "MRP": 161900.00,
+        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71Xk9qt6IwL._SL1500_.jpg",
+        "Review": [
+            "Its an awesome product as it is a gaming laptop",
+            "Good Product"
+        ],
+        "Ratings": 5
+    },
+    {
+        "Id": "pd2",
+        "Name": "Samsung 24inch monitor",
+        "Description": {
+            "Display": "24 inch Samsung Monitor - 1,920 x 1, 080 Resolution IPS Panel Monitor. 3-sided borderless display for All-expansive view. Fluid pictures with 75hz refresh rate | 5 ms response time | 250cd/m2 Brightness (Typical).",
+            "Aspect Ratio": "16: 9 | 178° Horizontal and Vertical Viewing Angle.",
+            "Features": "FreeSync and Game Mode to adjust any game and fill screen. Eye Saver Mode and Flicker free to reduce eye strain. ",
+            "Connectivity": "D-Sub Port, HDMI.",
+            "Warranty": " 3 Years Warranty on Product From Manufacturer"
+        },
+        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81TjRLHaz1L._SL1500_.jpg",
+        "MRP": 10099,
+        "Review": [
+            "I have been using for my personal and office work. It's a good product when you like to splitting the screen and work simultaneously in two different windows. The experience is far great"
+        ],
+        "Ratings": 4.3
+    },
+    {
+        "Id": "pd3",
+        "Name": "Brother DCP-T525W - Wi-Fi Color Ink Tank Multifunction printer",
+        "Description": {
+            "Printer type": "ink Tank;",
+            "functionality": "all in one (print, scan, copy);",
+            "printer output": "color",
+            "Connectivity": "USB, Wi-Fi, Wi-Fi direct",
+            "power source": "220 - 240 V AC 50/60 Hz",
+            "Scanner Resolution": "1,200 X 2, 400dpi",
+            "Airprint Support": "Yes.",
+            "OS Compatibility": "WIN, Mac, Linux; Duplex - Manual;",
+            "Enlarge/reduce option": " Yes;",
+            "Mobile connectivity ": "Yes.",
+            "Max Print Speed": " 28/11 ppm (Black/Color);",
+            "Print Cost": " 0.08(Black)/0.09 (CMY).",
+            "Maximum Paper Thickness": " 220 GSM",
+            "Power wattage": " 16 W. Ideal for home or Office",
+            "Included Components": "Power Cable, USB, Installation CD,1 Black Ink Bottle",
+            "Paper Size Supported": " A4, Letter, Legal, Mexico Legal, India Legal, Folio, Executive, B5 (JIS), A5, B6 (JIS), A6, Envelopes (C5, Com-10, DL, Monarch), Photo (4 x 6)/(10 x 15 cm), Photo 2L (5 x 7)/(13 x 18 cm), Index card (5 x 8)/(13 x 20 cm).",
+            "Genuine Ink bottles ": " BTD60BK, BT5000 C, M, Y",
+            "page yield ": "7500 pages (Black), C, M, Y - 5000 pages each (colour). ",
+            "Ink Color ": "Black, Cyan, Magenta and Yellow.",
+            "Wifi Band support ": " 2.4 GHz"
+        },
+        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61lk9CNDVXL._SX679_.jpg",
+        "MRP": 14999,
+        "Review": [
+            "Best printer and print copy setting very good option brother printer."
+        ],
+        "Ratings": 4.2
     }
 ]
