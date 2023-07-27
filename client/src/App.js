@@ -9,16 +9,18 @@ import PdtDetail from './pages/PdtDetail';
 import Footer from './components/Footer';
 import ProductCard from './components/ProductCard';
 import Products from './components/Products';
+import AboutUs from './components/AboutUs';
 
 const App = () => {
   return (
     <Box width='400px' sx={{ width: { xl: '1488px' } }} m='auto'>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/productCard' element={<ProductCard/>}/>
-        <Route path='/product/:id' element={<PdtDetail/>} /> 
-        <Route path='/products' element={<Products/>}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/productCard' element={<ProductCard />} />
+        <Route path='/product/:id' element={<PdtDetail />} />
+        <Route path='/products' element={<Products />} />
+        <Route path='/AboutUs' element={<AboutUs />}></Route>
       </Routes>
       <Footer />
     </Box>
