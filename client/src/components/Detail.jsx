@@ -21,7 +21,7 @@ const Detail = ({ pdtDetail }) => {
 					Features:
 					{Description.Warranty}
 				</div> */}
-				
+
 				<div>
 					Reviews:
 					{Review.map((curr) => {
