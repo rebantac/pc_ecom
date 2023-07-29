@@ -6,29 +6,25 @@ import AboutUs from "./AboutUs";
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar w-full navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/"><img className='mx-3' style={{ height: '50px', width: '50px', }} src={logo} alt="logo" /></Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+      <nav className="bg-gray-800 p-4 flex items-center justify-between">
+        {/* Left Section */}
+        <div className="flex items-center space-x-4">
+          {/* Logo */}
+          <img className="h-8 w-8" src={logo} alt="Logo" />
+
+          {/* Home Button */}
+          <Link to="/" className="text-white font-semibold text-lg">Home</Link>
+        </div>
+
+        {/* Right Section */}
+        <div className="flex items-center space-x-4">
+          {/* Why Choose Us? Link */}
+          <Link to="/AboutUs" className="text-white hover:text-gray-300">Why Choose Us?</Link>
+
+          {/* Cart Option */}
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+            Cart
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="/">Home</Link>
-                            </li>
-                        </ul>
-                    </div>
-          <div className="my-lg-0 my-2">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to={`/AboutUs`}>Why choose us?</Link>
-              </li>
-              <li className='nav-item'><Link className='nav-link' to='/'>Contact us</Link></li>
-              <li className='nav-item'><Link className='nav-link' to='/'>Services</Link></li>
-              <li className='nav-item'><Link className='nav-link' to='/'>Cart</Link></li>
-            </ul>
-          </div>
         </div>
       </nav>
     </div>
