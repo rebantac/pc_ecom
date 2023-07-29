@@ -10,6 +10,7 @@ import PdtDetail from './pages/PdtDetail';
 import Footer from './components/Footer';
 import ProductCard from './components/ProductCard';
 import Products from './components/Products';
+import AboutUs from './components/AboutUs';
 
 const App = () => {
   return (
@@ -17,8 +18,11 @@ const App = () => {
       <Navbar />
       <Navbar2/>
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/product/:id' element={<PdtDetail/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/productCard' element={<ProductCard />} />
+        <Route path='/product/:id' element={<PdtDetail />} />
+        <Route path='/products' element={<Products />} />
+        <Route path='/AboutUs' element={<AboutUs />}></Route>
       </Routes>
       <Footer />
     </Box>
