@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 
 import './App.css';
 import Navbar from './components/Navbar';
+import Navbar2 from './components/Navbar2';
 import Home from './pages/Home';
 import PdtDetail from './pages/PdtDetail';
 import Footer from './components/Footer';
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <Box width='400px' sx={{ width: { xl: '1488px' } }} m='auto'>
       <Navbar />
+      <Navbar2/>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/product/:id' element={<PdtDetail/>} />
