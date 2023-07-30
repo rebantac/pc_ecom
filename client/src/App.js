@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import ProductCard from './components/ProductCard';
 import Products from './components/Products';
 import AboutUs from './components/AboutUs';
+import Cart from './pages/Cart';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='/product/:id' element={<PdtDetail />} />
         <Route path='/products' element={<Products />} />
         <Route path='/AboutUs' element={<AboutUs />}></Route>
+        <Route path='/cart' element={<Cart/>}></Route>
       </Routes>
       <Footer />
     </Box>
