@@ -20,6 +20,7 @@ const App = () => {
     <Box width='400px' sx={{ width: { xl: '1488px' } }} m='auto'>
       <AuthContextProvider>
           <Navbar />
+          <Navbar2/>
           <Routes>
             <Route path='/Login' element={<Login />}></Route>
             <Route path='/' element={<Home />} />
