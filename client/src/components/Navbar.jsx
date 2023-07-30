@@ -1,10 +1,10 @@
 import React from "react";
 import logo from '../assets/logo.png';
 import { Link } from "react-router-dom";
-// import AboutUs from "./AboutUs";
 
 const Navbar = () => {
   return (
+
     <div>
       <nav className="bg-gray-800 p-4 flex items-center justify-between">
         {/* Left Section */}
