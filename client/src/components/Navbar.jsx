@@ -1,10 +1,10 @@
 import React from "react";
 import logo from '../assets/logo.png';
 import { Link } from "react-router-dom";
-import AboutUs from "./AboutUs";
 
 const Navbar = () => {
   return (
+
     <div>
       <nav className="bg-gray-800 p-4 flex items-center justify-between">
         {/* Left Section */}
@@ -25,6 +25,26 @@ const Navbar = () => {
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
             Cart
           </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/">Home</Link>
+              </li>
+              <li className='nav-item'><Link className='nav-link' to='/'>Laptops</Link></li>
+              <li className='nav-item'><Link className='nav-link' to='/'>Printers</Link></li>
+              <li className='nav-item'><Link className='nav-link' to='/'>Monitors</Link></li>
+            </ul>
+          </div>
+          <div className="my-lg-0 my-2">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link" to={`/AboutUs`}>Why choose us?</Link>
+              </li>
+              {/* <li className='nav-item'><Link className='nav-link' to='/'>Contact us</Link></li> */}
+              <li className='nav-item'><Link className='nav-link' to='/'>Services</Link></li>
+              <li className='nav-item'><Link className='nav-link' to='/'>Cart</Link></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
