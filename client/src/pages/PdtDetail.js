@@ -15,6 +15,7 @@ const PdtDetail = () => {
 
   useEffect(() => {
     const fetchPdtData = async () => {
+      // eslint-disable-next-line
       const pdtDetailData = data.filter((currVal) => {
         if (currVal.Id === id)
           return currVal;
