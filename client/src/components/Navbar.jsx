@@ -1,8 +1,19 @@
 import React from "react";
 import logo from '../assets/logo.png';
 import { Link } from "react-router-dom";
+import { UserAuth } from "../Context/AuthContext";
 
 const Navbar = () => {
+  const {user, logout} = UserAuth();
+
+  const handleSignOut = async() => {
+    try {
+      await logout();
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
 
     <div>
@@ -13,13 +24,15 @@ const Navbar = () => {
           <img className="h-8 w-8" src={logo} alt="Logo" />
 
           {/* Home Button */}
-          <Link to="/" className="text-white font-semibold text-lg">Home</Link>
+          {user?.displayName ? <p className="text-white">Hello, {user?.displayName}</p> : <Link to="/" className="text-white font-semibold text-lg">Home</Link>}
         </div>
 
         {/* Right Section */}
         <div className="flex items-center space-x-4 ml-2">
           {/* Why Choose Us? Link */}
           <Link to="/AboutUs" className="text-white hover:text-gray-300">Why Choose Us?</Link>
+          {user?.displayName ? <button onClick={handleSignOut} className="text-white hover:text-gray-300">LogOut</button> : <Link to="/Login" className="text-white hover:text-gray-300">Login</Link>}
+          {user?.displayName ? <p></p> : <Link to="/Register" className="text-white hover:text-gray-300">Register</Link>}
 
           {/* Cart Option */}
           <div className="relative">
