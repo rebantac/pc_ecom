@@ -1,12 +1,15 @@
 import React from 'react'
-import data from '../assets/data.json'
 import ProductCard from './ProductCard'
+import { CartState } from '../Context/shopContext'
 
 function Products() {
+    const {
+        state :{products},
+    } = CartState();
     return (
         <div className='flex flex-wrap justify-center'>
-            {data && data.map((element) => {
-                return <ProductCard key={element.Id} pId={element.Id} name={element.Name} price={element.MRP} imageUrl={element.Image} />
+            {products && products.map((element) => {
+                return <ProductCard key={element.Id} prod={element} />
             })}
         </div>
     )

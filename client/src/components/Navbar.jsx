@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../assets/logo.png';
 import { Link } from "react-router-dom";
+
 import { UserAuth } from "../Context/AuthContext";
 
 const Navbar = () => {
@@ -13,6 +14,16 @@ const Navbar = () => {
       console.log(error);
     }
   }
+
+
+import {ShoppingCart} from "phosphor-react";
+import { CartState } from "../Context/shopContext";
+
+const Navbar = () => {
+
+  const {
+    state : {cart},
+  } = CartState();
 
   return (
 
@@ -38,6 +49,7 @@ const Navbar = () => {
           <div className="relative">
             {/* Cart icon */}
             <Link to='/cart'>
+
               <button className="text-white">
                 <svg
                   className="w-6 h-6"
@@ -54,10 +66,13 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
+
+              <ShoppingCart size={32}/>
+
             </Link>
             {/* Cart item count */}
-            <span className="absolute top-0 right-0 mt-2 mr-2 bg-red-500 text-white rounded-full px-2 py-1 text-xs">
-              0
+            <span className="bg-red-500 text-white rounded-full w-5 h-5 absolute -top-1 -right-1 flex items-center justify-center">
+              {cart.length}
             </span>
           </div>
         </div>
