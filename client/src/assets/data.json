@@ -12,7 +12,7 @@
             "Warranty": "1 Year manufacturer"
         },
         "MRP": 161900.00,
-        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71Xk9qt6IwL._SL1500_.jpg",
+        "Image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81E2srXhKVL.jpg",
         "Review": [
             "Its an awesome product as it is a gaming laptop",
             "Good Product"
@@ -29,7 +29,7 @@
             "Connectivity": "D-Sub Port, HDMI.",
             "Warranty": " 3 Years Warranty on Product From Manufacturer"
         },
-        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81TjRLHaz1L._SL1500_.jpg",
+        "Image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81FGSNZMPPL.jpg",
         "MRP": 10099,
         "Review": [
             "I have been using for my personal and office work. It's a good product when you like to splitting the screen and work simultaneously in two different windows. The experience is far great"
@@ -61,7 +61,7 @@
             "Ink Color ": "Black, Cyan, Magenta and Yellow.",
             "Wifi Band support ": " 2.4 GHz"
         },
-        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61lk9CNDVXL._SX679_.jpg",
+        "Image": "https://images.unsplash.com/photo-1625961332771-3f40b0e2bdcf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "MRP": 14999,
         "Review": [
             "Best printer and print copy setting very good option brother printer."
@@ -69,7 +69,7 @@
         "Ratings": 4.2
     },
     {
-        "Id": "pd1",
+        "Id": "pd4",
         "Name": "Acer Predator Helios Laptop",
         "Description": {
             "Processor&Memory": "Intel, core_i9, Intel® Core¢ i9-11900H processor, 4.9 GHz, 16GB RAM, RAM Expandable up to 32GB.",
@@ -81,7 +81,7 @@
             "Warranty": "1 Year manufacturer"
         },
         "MRP": 161900.00,
-        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71Xk9qt6IwL._SL1500_.jpg",
+        "Image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81E2srXhKVL.jpg",
         "Review": [
             "Its an awesome product as it is a gaming laptop",
             "Good Product"
@@ -89,7 +89,7 @@
         "Ratings": 5
     },
     {
-        "Id": "pd2",
+        "Id": "pd5",
         "Name": "Samsung 24inch monitor",
         "Description": {
             "Display": "24 inch Samsung Monitor - 1,920 x 1, 080 Resolution IPS Panel Monitor. 3-sided borderless display for All-expansive view. Fluid pictures with 75hz refresh rate | 5 ms response time | 250cd/m2 Brightness (Typical).",
@@ -98,7 +98,7 @@
             "Connectivity": "D-Sub Port, HDMI.",
             "Warranty": " 3 Years Warranty on Product From Manufacturer"
         },
-        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81TjRLHaz1L._SL1500_.jpg",
+        "Image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81FGSNZMPPL.jpg",
         "MRP": 10099,
         "Review": [
             "I have been using for my personal and office work. It's a good product when you like to splitting the screen and work simultaneously in two different windows. The experience is far great"
@@ -106,7 +106,7 @@
         "Ratings": 4.3
     },
     {
-        "Id": "pd3",
+        "Id": "pd6",
         "Name": "Brother DCP-T525W - Wi-Fi Color Ink Tank Multifunction printer",
         "Description": {
             "Printer type": "ink Tank;",
@@ -130,7 +130,7 @@
             "Ink Color ": "Black, Cyan, Magenta and Yellow.",
             "Wifi Band support ": " 2.4 GHz"
         },
-        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61lk9CNDVXL._SX679_.jpg",
+        "Image": "https://images.unsplash.com/photo-1625961332771-3f40b0e2bdcf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "MRP": 14999,
         "Review": [
             "Best printer and print copy setting very good option brother printer."
@@ -138,7 +138,7 @@
         "Ratings": 4.2
     },
     {
-        "Id": "pd1",
+        "Id": "pd7",
         "Name": "Acer Predator Helios Laptop",
         "Description": {
             "Processor&Memory": "Intel, core_i9, Intel® Core¢ i9-11900H processor, 4.9 GHz, 16GB RAM, RAM Expandable up to 32GB.",
@@ -150,7 +150,7 @@
             "Warranty": "1 Year manufacturer"
         },
         "MRP": 161900.00,
-        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71Xk9qt6IwL._SL1500_.jpg",
+        "Image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81E2srXhKVL.jpg",
         "Review": [
             "Its an awesome product as it is a gaming laptop",
             "Good Product"
@@ -158,7 +158,7 @@
         "Ratings": 5
     },
     {
-        "Id": "pd2",
+        "Id": "pd8",
         "Name": "Samsung 24inch monitor",
         "Description": {
             "Display": "24 inch Samsung Monitor - 1,920 x 1, 080 Resolution IPS Panel Monitor. 3-sided borderless display for All-expansive view. Fluid pictures with 75hz refresh rate | 5 ms response time | 250cd/m2 Brightness (Typical).",
@@ -167,7 +167,7 @@
             "Connectivity": "D-Sub Port, HDMI.",
             "Warranty": " 3 Years Warranty on Product From Manufacturer"
         },
-        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81TjRLHaz1L._SL1500_.jpg",
+        "Image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81FGSNZMPPL.jpg",
         "MRP": 10099,
         "Review": [
             "I have been using for my personal and office work. It's a good product when you like to splitting the screen and work simultaneously in two different windows. The experience is far great"
@@ -175,7 +175,7 @@
         "Ratings": 4.3
     },
     {
-        "Id": "pd3",
+        "Id": "pd9",
         "Name": "Brother DCP-T525W - Wi-Fi Color Ink Tank Multifunction printer",
         "Description": {
             "Printer type": "ink Tank;",
@@ -199,7 +199,7 @@
             "Ink Color ": "Black, Cyan, Magenta and Yellow.",
             "Wifi Band support ": " 2.4 GHz"
         },
-        "Image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61lk9CNDVXL._SX679_.jpg",
+        "Image": "https://images.unsplash.com/photo-1625961332771-3f40b0e2bdcf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "MRP": 14999,
         "Review": [
             "Best printer and print copy setting very good option brother printer."

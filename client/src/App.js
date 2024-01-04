@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 import ProductCard from './components/ProductCard';
 import Products from './components/Products';
 import AboutUs from './components/AboutUs';
-import Cart from  './pages/Cart'
+import Cart from  './pages/cart/Cart'
 import Login from './pages/Login';
 import Register from './pages/Register';
 import { AuthContextProvider } from './Context/AuthContext';
