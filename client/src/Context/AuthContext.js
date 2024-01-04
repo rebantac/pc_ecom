@@ -14,11 +14,27 @@ const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
 
     const [user, setUser] = useState({});
-
+    
     const googleSignIn = () => {
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
         // signInWithRedirect(auth, provider)
+    }
+
+    const emailSignIn = async (email, password) => {
+            const userCredential = await auth.signInWithEmailAndPassword(
+              email,
+              password
+            );
+            const user = userCredential.user;
+            alert('Login successful!');
+            console.log(user);
+    }
+
+    const emailSignUp = async(email, password) => {
+       
+            await auth.createUserWithEmailAndPassword(email, password);
+            alert('Registration successful!');
     }
 
     const logout = () => {
@@ -38,7 +54,7 @@ export const AuthContextProvider = ({ children }) => {
 
 
     return (
-        <AuthContext.Provider value={{ googleSignIn, logout, user }}>
+        <AuthContext.Provider value={{ googleSignIn, logout, user, emailSignIn, emailSignUp }}>
             {children}
         </AuthContext.Provider>
     )
