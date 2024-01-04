@@ -3,6 +3,8 @@ import logo from '../assets/logo.png';
 import { Link } from "react-router-dom";
 
 import { UserAuth } from "../Context/AuthContext";
+import {ShoppingCart} from "phosphor-react";
+import { CartState } from "../Context/shopContext";
 
 const Navbar = () => {
   const {user, logout} = UserAuth();
@@ -14,12 +16,6 @@ const Navbar = () => {
       console.log(error);
     }
   }
-
-
-import {ShoppingCart} from "phosphor-react";
-import { CartState } from "../Context/shopContext";
-
-const Navbar = () => {
 
   const {
     state : {cart},
@@ -49,24 +45,6 @@ const Navbar = () => {
           <div className="relative">
             {/* Cart icon */}
             <Link to='/cart'>
-
-              <button className="text-white">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 19c0 1.657 1.343 3 3 3s3-1.343 3-3M4 2l2.3 6.9M20 2l-2.3 6.9M2 10h20l-2.2 6.6c-.267.8-1 1.4-1.9 1.4H5.1c-.9 0-1.6-.6-1.9-1.4L2 10z"
-                  />
-                </svg>
-              </button>
-
               <ShoppingCart size={32}/>
 
             </Link>
