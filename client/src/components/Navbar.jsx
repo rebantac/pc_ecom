@@ -7,9 +7,11 @@ import { ShoppingCart } from "phosphor-react";
 import { CartState } from "../Context/shopContext";
 
 const Navbar = () => {
-  const { user, logout } = UserAuth();
 
-  const handleSignOut = async () => {
+  const {user, logout} = UserAuth();
+  console.log("navbar");
+  console.log(user);
+  const handleSignOut = async() => {
     try {
       await logout();
     } catch (error) {
