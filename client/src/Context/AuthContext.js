@@ -3,7 +3,10 @@ import {
     GoogleAuthProvider, 
     signInWithPopup, 
     signOut, 
-    onAuthStateChanged, 
+    onAuthStateChanged,
+    signInWithEmailAndPassword, 
+    createUserWithEmailAndPassword,
+    updateProfile,
 } from "firebase/auth";
 
 import { auth } from "../firebase";
@@ -22,20 +25,48 @@ export const AuthContextProvider = ({ children }) => {
     }
 
     const emailSignIn = async (email, password) => {
-            const userCredential = await auth.signInWithEmailAndPassword(
-              email,
-              password
-            );
-            const user = userCredential.user;
-            alert('Login successful!');
-            console.log(user);
-    }
+        return new Promise((resolve, reject) => {
+          signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+              // Signed in successfully
+              const user = userCredential.user;
+              // Set user in your context or handle it as needed
+              setUser(user);
+              resolve(user);
+            })
+            .catch((error) => {
+              const errorMessage = error.message;
+              reject(errorMessage);
+            });
+        });
+      };
 
-    const emailSignUp = async(email, password) => {
-       
-            await auth.createUserWithEmailAndPassword(email, password);
-            alert('Registration successful!');
-    }
+      const emailSignUp = async (email, password, displayName) => {
+        return new Promise((resolve, reject) => {
+          createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+              // Signed up successfully
+              const user = userCredential.user;
+      
+              // Update the user's profile with the provided displayName
+              updateProfile(user, { displayName: displayName })
+                .then(() => {
+                  // Profile updated successfully
+                  console.log('User signed up with name:', displayName);
+                  resolve(user);
+                })
+                .catch((updateError) => {
+                  // Error updating profile
+                  console.error('Error updating profile:', updateError.message);
+                  reject(updateError.message);
+                });
+            })
+            .catch((error) => {
+              const errorMessage = error.message;
+              reject(errorMessage);
+            });
+        });
+      };
 
     const logout = () => {
         signOut(auth);

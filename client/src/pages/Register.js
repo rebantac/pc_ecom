@@ -28,10 +28,14 @@ export default function Register() {
 
   const handleEmailSignUp = async () => {
     try {
-      await emailSignUp(email, password);
-      navigate("/");
+      await emailSignUp(email, password, name);
+      navigate("/login");
     } catch (error) {
-      alert(error.message);
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode);
+      console.log(errorMessage);
+      alert(errorMessage);
     }
   }
 
