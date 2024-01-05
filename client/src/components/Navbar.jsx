@@ -70,7 +70,7 @@ const Navbar = () => {
           {user?.displayName ? (
             <button
               onClick={handleSignOut}
-              className="font-semiboldhover:text-blue-800 text-grey-800"
+              className="font-semibold hover:text-blue-800 text-grey-800"
             >
               LogOut
             </button>
