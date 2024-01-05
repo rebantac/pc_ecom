@@ -8,7 +8,8 @@ import { CartState } from "../Context/shopContext";
 
 const Navbar = () => {
   const {user, logout} = UserAuth();
-
+  console.log("navbar");
+  console.log(user);
   const handleSignOut = async() => {
     try {
       await logout();
