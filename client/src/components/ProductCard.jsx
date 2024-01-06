@@ -1,8 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { CartState } from '../Context/shopContext';
 
+
 const ProductCard = ({ prod }) => {
+  const navigate = useNavigate();
   const {
     state: { cart },
     dispatch,
@@ -26,8 +28,8 @@ const ProductCard = ({ prod }) => {
           {
             cart.some((p) => p.Id === prod.Id) ? (
               <button
-                className="flex-shrink-0 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded shadow mr-1"
-                onClick={() => 
+                className="transition ease-in-out delay-150 flex-shrink-0 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded shadow mr-1"
+                onClick={() =>
                   dispatch({
                     type: "REMOVE_FROM_CART",
                     payload: prod,
@@ -38,8 +40,8 @@ const ProductCard = ({ prod }) => {
               </button>
             ) : (
               <button
-                className="flex-shrink-0 bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-3 rounded shadow mx-1"
-                onClick={() => 
+                className="transition ease-in-out delay-150 flex-shrink-0 bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-3 rounded shadow mx-1"
+                onClick={() =>
                   dispatch({
                     type: "ADD_TO_CART",
                     payload: prod,
@@ -53,13 +55,17 @@ const ProductCard = ({ prod }) => {
 
 
           <button
-            className="flex-shrink-0 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded shadow ml-1"
+            className="transition ease-in-out delay-150 flex-shrink-0 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded shadow ml-1"
             onClick={() => {
-              dispatch({
+              if (cart.some((p) => p.Id === prod.Id)) {
+                navigate('/cart');
+              } else {
+                dispatch({
                 type: "ADD_TO_CART",
                 payload: prod,
-              })
-              alert(`Buy Now clicked for ${prod.Name}`);
+                });
+                navigate('/cart');
+              }
             }}
           >
             Buy Now

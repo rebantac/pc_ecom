@@ -50,7 +50,7 @@ const Cart = () => {
               </label>
               <select
                 id={`quantity-${item.Id}`}
-                value={item.quantity}
+                defaultValue={item.qty}
                 onChange={(e) => handleQuantityChange(item.Id, parseInt(e.target.value))}
                 className="p-2 border rounded"
               >
