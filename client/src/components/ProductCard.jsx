@@ -28,7 +28,7 @@ const ProductCard = ({ prod }) => {
           {
             cart.some((p) => p.Id === prod.Id) ? (
               <button
-                className="transition ease-in-out delay-150 flex-shrink-0 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded shadow mr-1"
+                className="transition ease-in-out delay-150 bg-red-500 hover:-translate-y-1 hover:scale-110 hover:bg-red-700 duration-300 text-white font-bold py-1 px-3 rounded shadow mr-1"
                 onClick={() =>
                   dispatch({
                     type: "REMOVE_FROM_CART",
@@ -40,7 +40,7 @@ const ProductCard = ({ prod }) => {
               </button>
             ) : (
               <button
-                className="transition ease-in-out delay-150 flex-shrink-0 bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-3 rounded shadow mx-1"
+                className="transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-800 duration-300 text-white font-bold py-1 px-3 rounded shadow mx-1"
                 onClick={() =>
                   dispatch({
                     type: "ADD_TO_CART",
@@ -55,7 +55,7 @@ const ProductCard = ({ prod }) => {
 
 
           <button
-            className="transition ease-in-out delay-150 flex-shrink-0 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded shadow ml-1"
+            className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 text-white font-bold py-1 px-3 rounded shadow ml-1"
             onClick={() => {
               if (cart.some((p) => p.Id === prod.Id)) {
                 navigate('/cart');
