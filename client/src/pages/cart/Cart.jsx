@@ -1,5 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { CartState } from '../../Context/shopContext';
 
 const Cart = () => {
@@ -14,6 +16,13 @@ const Cart = () => {
       type: 'UPDATE_QUANTITY',
       payload: { Id, qty },
     });
+  };
+
+  const handleRemoveItem = (prod) => {
+    dispatch({
+      type: 'REMOVE_FROM_CART',
+      payload: prod ,
+    })
   };
 
   const [total, setTotal] = useState();
@@ -60,6 +69,12 @@ const Cart = () => {
                   </option>
                 ))}
               </select>
+              <button
+                className="ml-4 text-red-500 hover:text-red-700"
+                onClick={() => handleRemoveItem(item)}
+              >
+                <FontAwesomeIcon icon={faTrash} />
+              </button>
             </div>
           </div>
         ))}
