@@ -11,13 +11,10 @@ import Footer from './components/Footer';
 import ProductCard from './components/ProductCard';
 import Products from './components/Products';
 import AboutUs from './components/AboutUs';
-
-
-
 import Cart from  './pages/cart/Cart'
-
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Carousel from './components/Carousel';
 import { AuthContextProvider } from './Context/AuthContext';
 
 const App = () => {
@@ -35,6 +32,7 @@ const App = () => {
           <Route path='/AboutUs' element={<AboutUs />}></Route>
           <Route path='/Register' element={<Register />}></Route>
           <Route path='/cart' element={<Cart />}></Route>
+          <Route path='/carousel' element={<Carousel />}></Route>
         </Routes>
         <Footer />
       </AuthContextProvider>
