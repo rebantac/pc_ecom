@@ -58,12 +58,12 @@ const Carousel = () => {
                 {/* Slides content */}
                 {slides.map((slide, index) => (
                     <div key={index} className="flex items-center">
-                        <div className=''>
-                        <img
-                            className="w-full h-64 object-contain"
-                            src={slide.image}
-                            alt={`Slide ${index + 1}`}
-                        />
+                        <div className='w-1/2'>
+                            <img
+                                className="w-full h-64 object-contain"
+                                src={slide.image}
+                                alt={`Slide ${index + 1}`}
+                            />
                         </div>
                         <div className="w-1/2 pl-8 ">
                             <p className="text-lg font-semibold">{slide.text}</p>
