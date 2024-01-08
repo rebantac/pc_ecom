@@ -60,12 +60,12 @@ const Carousel = () => {
                     <div key={index} className="flex items-center">
                         <div className=''>
                         <img
-                            className="w-1/2 h-64 object-contain relative"
+                            className="w-1/2 h-64 object-contain"
                             src={slide.image}
                             alt={`Slide ${index + 1}`}
                         />
                         </div>
-                        <div className="w-1/2 pl-8">
+                        <div className="w-1/2 pl-8 ">
                             <p className="text-lg font-semibold">{slide.text}</p>
                         </div>
                     </div>
