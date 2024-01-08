@@ -60,7 +60,7 @@ const Carousel = () => {
                     <div key={index} className="flex items-center">
                         <div className=''>
                         <img
-                            className="w-1/2 h-64 object-contain"
+                            className="w-full h-64 object-contain"
                             src={slide.image}
                             alt={`Slide ${index + 1}`}
                         />
