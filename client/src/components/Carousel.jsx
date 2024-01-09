@@ -55,18 +55,19 @@ const Carousel = () => {
     return (
         <div className="max-w-screen-lg mx-auto my-8 relative">
             <Slider ref={sliderRef} {...settings} >
-                {/* Slides content */}
                 {slides.map((slide, index) => (
-                    <div key={index} className="flex items-center">
-                        <div className='w-1/2'>
-                            <img
-                                className="w-full h-64 object-contain"
-                                src={slide.image}
-                                alt={`Slide ${index + 1}`}
-                            />
-                        </div>
-                        <div className="w-1/2 pl-8 ">
-                            <p className="text-lg font-semibold">{slide.text}</p>
+                    <div key={index}>
+                        <div className="flex items-center">
+                            <div className='w-1/2'>
+                                <img
+                                    className="w-full h-64 object-contain"
+                                    src={slide.image}
+                                    alt={`Slide ${index + 1}`}
+                                />
+                            </div>
+                            <div className="w-1/2 pl-8">
+                                <p className="text-lg font-semibold">{slide.text}</p>
+                            </div>
                         </div>
                     </div>
                 ))}
