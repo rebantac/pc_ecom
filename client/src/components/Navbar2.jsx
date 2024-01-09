@@ -37,7 +37,7 @@ const Navbar2 = () => {
           </ul>
         </div>
 
-        <div className="lg:hidden relative z-50">
+        <div className="lg:hidden relative z-10">
           {/* Small screen */}
           <ClickAwayListener onClickAway={handleClickAway}>
             <div>

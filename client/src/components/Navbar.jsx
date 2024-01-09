@@ -112,7 +112,7 @@ const Navbar = () => {
 
           {/* Responsive menu for small screens */}
           {menuVisible && (
-            <div className="lg:hidden fixed top-0 left-0 w-full h-full bg-[#dde0e5] z-10">
+            <div className="lg:hidden fixed top-0 left-0 w-full h-full bg-[#dde0e5] z-50">
               <div className="block w-full fixed top-0 left-0 bg-[#dde0e5] h-full transition-all duration-[800ms] shadow-xl z-10 py-8 px-12 rounded-b-xl">
                 <AiOutlineClose
                   size={25}
