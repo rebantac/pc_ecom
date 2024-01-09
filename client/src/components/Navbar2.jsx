@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {HiMenuAlt3} from "react-icons/hi"
+import ClickAwayListener from '@mui/material/ClickAwayListener';
+
 
 const Navbar2 = () => {
   const categories = [
@@ -12,6 +14,11 @@ const Navbar2 = () => {
     'Services',
     'LED Wall Installation',
   ];
+
+  const handleClickAway = () => {
+    setMenuVisible(false);
+  };
+
 
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -32,18 +39,29 @@ const Navbar2 = () => {
 
         <div className="lg:hidden relative z-50">
           {/* Small screen */}
-      
-          <HiMenuAlt3 onClick={() => setMenuVisible(!menuVisible)} size={30} className="block cursor-pointer text-white"/>
-
-          {menuVisible && (
-            <ul className="bg-gray-800 text-white absolute mt-2 p-2 space-y-2 border border-white rounded shadow-lg">
-              {categories.map((category, index) => (
-                <li key={index} className="hover:text-white">
-                  <Link to="#" onClick={() => setMenuVisible(false)}>{category}</Link>
-                </li>
-              ))}
-            </ul>
-          )}
+          <ClickAwayListener onClickAway={handleClickAway}>
+            <div>
+              <HiMenuAlt3
+                onClick={() => setMenuVisible(!menuVisible)}
+                size={30}
+                className="block cursor-pointer text-white"
+              />
+              {menuVisible && (
+                <ul className="bg-gray-800 text-white absolute mt-2 p-2 space-y-2 border border-white rounded shadow-lg">
+                  {categories.map((category, index) => (
+                    <li key={index} className="hover:text-white">
+                      <Link
+                        to="#"
+                        onClick={() => setMenuVisible(false)}
+                      >
+                        {category}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </ClickAwayListener>
         </div>
       </div>
     </nav>
