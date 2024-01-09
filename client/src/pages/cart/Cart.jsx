@@ -21,18 +21,18 @@ const Cart = () => {
   const handleRemoveItem = (prod) => {
     dispatch({
       type: 'REMOVE_FROM_CART',
-      payload: prod ,
+      payload: prod,
     })
   };
 
   const [total, setTotal] = useState();
 
-  useEffect(()=>{
-    setTotal(cart.reduce((acc, curr) => acc + Number(curr.MRP)*curr.qty, 0));
+  useEffect(() => {
+    setTotal(cart.reduce((acc, curr) => acc + Number(curr.MRP) * curr.qty, 0));
   }, [cart]);
 
 
-  
+
 
   // Function to handle checkout
   const handleCheckout = () => {
@@ -79,17 +79,23 @@ const Cart = () => {
           </div>
         ))}
       </div>
-      
-      <div className="mt-8">
-        <p className="text-xl font-semibold">Total Amount: ₹{total}</p>
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          disabled = {cart.length === 0}
-          onClick={handleCheckout}
-        >
-          Checkout
-        </button>
-      </div>
+
+      {cart.length > 0 ? (
+        <div className="mt-8">
+          <p className="text-xl font-semibold">Total Amount: ₹{total}</p>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            disabled={cart.length === 0}
+            onClick={handleCheckout}
+          >
+            Checkout
+          </button>
+        </div>) : (
+        <div>
+          <p>Oops! It seems your cart is empty. Browse our products and find something you love</p>
+        </div>
+      )
+      }
     </div>
   );
 };
