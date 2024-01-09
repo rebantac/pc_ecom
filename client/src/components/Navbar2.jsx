@@ -30,7 +30,7 @@ const Navbar2 = () => {
           </ul>
         </div>
 
-        <div className="lg:hidden">
+        <div className="lg:hidden relative z-50">
           {/* Small screen */}
       
           <HiMenuAlt3 onClick={() => setMenuVisible(!menuVisible)} size={30} className="block cursor-pointer text-white"/>
