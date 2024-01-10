@@ -51,7 +51,7 @@ const Navbar = () => {
 
         {/* Right Section */}
         <div className="flex items-center space-x-4 lg:space-x-0">
-          <div className="lg:flex hidden items-center space-x-4">
+          <div className="lg:flex hidden items-center space-x-4 mr-4">
             {/* Home Button */}
             <Link to="/" className="hover:text-blue-800 text-grey-800 font-semibold">
               Home
@@ -82,7 +82,7 @@ const Navbar = () => {
           </div>
 
           {/* Cart Option */}
-          <div className="relative lg:flex hidden">
+          <div className="relative lg:flex hidden ml-2">
             {/* Cart icon */}
             <Link to="/cart">
               <ShoppingCart size={32} />
@@ -140,18 +140,19 @@ const Navbar = () => {
                       Register
                     </Link>
                   )}
-                  <div className="lg:flex">
-                  {/* Cart icon */}
-                  <Link to="/cart">
-                    <ShoppingCart size={32} />
-                  </Link>
-                  {/* Cart item count */}
-                  <span className="bg-red-500 text-black rounded-full w-5 h-5 absolute -top-1 -right-1 flex items-center justify-center">
-                    {cart.length}
-                  </span>
-                </div>
+                  <div className="lg:flex relative">
+                    {/* Cart icon */}
+                    <Link to="/cart" className="relative">
+                      <ShoppingCart size={32} />
+                      {/* Cart item count */}
+                      <span className="bg-red-500 text-black rounded-full w-5 h-5 absolute -top-1 -right-1 flex items-center justify-center">
+                        {cart.length}
+                      </span>
+                    </Link>
+                  </div>
+
                 </ul>
-                
+
               </div>
             </div>
           )}
