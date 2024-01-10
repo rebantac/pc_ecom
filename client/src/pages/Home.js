@@ -7,12 +7,12 @@ import { CartState } from '../Context/shopContext'
 const Home = () => {
   const {
     state: { products },
-} = CartState();
+  } = CartState();
   return (
     <div>
       <Carousel />
       <Products />
-      <BestSellingProducts products={products}/>
+      <BestSellingProducts products={products} />
       <Services />
     </div>
   )
