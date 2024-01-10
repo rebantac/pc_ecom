@@ -13,7 +13,13 @@ const Home = () => {
       <Carousel />
       <Products />
       <BestSellingProducts products={products}/>
+      <br />
+      <br />
+      <br />
       <Services />
+      <br />
+      <br />
+      <br />
     </div>
   )
 }
