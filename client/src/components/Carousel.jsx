@@ -53,7 +53,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="max-w-screen-lg mx-auto my-8 relative">
+        <div className="w-full mx-auto my-8 relative">
             <Slider ref={sliderRef} {...settings} >
                 {slides.map((slide, index) => (
                     <div key={index}>
