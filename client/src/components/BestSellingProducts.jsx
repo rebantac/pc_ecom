@@ -44,11 +44,9 @@ const BestSellingProducts = ({ products }) => {
                 </div>
             </div>
             <hr className="border-t border-gray-500 mb-4" />
-            <div className="flex flex-wrap space-y-4">
+            <div className="flex flex-wrap justify-center space-y-4">
                 {visibleProducts.map((product) => (
-                    <div key={product.id} className="w-full md:w-1/2 lg:w-1/4">
-                        <ProductCard prod={product} />
-                    </div>
+                    <ProductCard prod={product} key={product.id} />
                 ))}
             </div>
         </div>
